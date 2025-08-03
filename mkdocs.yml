@@ -1,10 +1,25 @@
 site_name: Pluggedspace Docs
 theme:
   name: material
-  theme:
-  name: material
   logo: images/Pluggedspace.png
   favicon: images/Pluggedspace.png
+  palette:
+    - scheme: default
+      primary: red
+      accent: blue
+
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+plugins:
+  - search
+
+extra:
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/pluggedspace
+  generator: false
 
   
 nav:
