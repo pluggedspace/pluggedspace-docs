@@ -1,4 +1,7 @@
 site_name: Pluggedspace Docs
+site_description: Official documentation for Pluggedspace's unified SaaS tools, including Monica, DRAC, KYC Engine, and more.
+site_url: https://docs.pluggedspace.org
+
 theme:
   name: material
   logo: images/Pluggedspace.png
@@ -19,9 +22,12 @@ extra:
   social:
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/pluggedspace
+    - icon: fontawesome/solid/globe
+      link: https://pluggedspace.org
+    - icon: fontawesome/solid/book
+      link: https://blog.pluggedspace.org
   generator: false
 
-  
 nav:
   - Home: index.md
   - Monica:
