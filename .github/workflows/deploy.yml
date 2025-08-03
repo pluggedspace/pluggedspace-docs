@@ -5,9 +5,13 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
 
@@ -19,7 +23,7 @@ jobs:
       - name: Install dependencies
         run: pip install mkdocs mkdocs-material
 
-      - name: Build site
+      - name: Build MkDocs
         run: mkdocs build
 
       - name: Deploy to GitHub Pages
