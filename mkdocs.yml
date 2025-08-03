@@ -8,7 +8,7 @@ theme:
   favicon: images/Pluggedspace.png
   palette:
     - scheme: default
-      primary: red
+      primary: black
       accent: blue
 
   font:
