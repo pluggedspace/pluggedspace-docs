@@ -21,7 +21,7 @@ plugins:
 extra:
   social:
     - icon: fontawesome/brands/twitter
-      link: https://twitter.com/pluggedspace
+      link: https://twitter.com/pluggedspace_io
     - icon: fontawesome/solid/globe
       link: https://pluggedspace.org
     - icon: fontawesome/solid/book
