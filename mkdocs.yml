@@ -51,3 +51,5 @@ nav:
       - Overview: data/index.md
       - Lakehouse: data/lakehouse.md
       - Analytics: data/analytics.md
+  - Match Predictor:
+      - Overview: models/match/index.md
