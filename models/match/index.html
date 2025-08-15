@@ -715,6 +715,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Table of Contents
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#requesting-an-api-key" class="md-nav__link">
     <span class="md-ellipsis">
       Requesting an API Key
@@ -775,6 +784,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Table of Contents
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#requesting-an-api-key" class="md-nav__link">
     <span class="md-ellipsis">
       Requesting an API Key
@@ -811,6 +829,23 @@
 <h1 id="welcome-to-match-bot-documentation">Welcome to match-bot Documentation</h1>
 <p>For full API reference visit <a href="https://docs.pluggedspace.org/models/match">m.pluggedspace.org</a>.</p>
 <hr />
+<h2 id="table-of-contents">Table of Contents</h2>
+<ol>
+<li><a href="#requesting-an-api-key">Requesting an API Key</a></li>
+<li><a href="#authentication">Authentication</a></li>
+<li><a href="#telegram-bot-usage">Telegram Bot Usage</a></li>
+<li><a href="#api-endpoints">API Endpoints</a></li>
+<li><a href="#get-api">GET api/</a></li>
+<li><a href="#post-apiretrain-name-retrain_predictions">POST api/retrain/</a></li>
+<li><a href="#get-apidashboardoverview-name-dashboard_overview">GET api/dashboard/overview/</a></li>
+<li><a href="#get-apidashboardconfidence-name-dashboard_confidence">GET api/dashboard/confidence/</a></li>
+<li><a href="#get-apipredictionslatest-name-latest_predictions">GET api/predictions/latest/</a></li>
+<li><a href="#get-apidashboardcompare_versions-name-compare_versions">GET api/dashboard/compare_versions/</a></li>
+<li><a href="#get-dashboardpredictions">GET dashboard/predictions/</a></li>
+<li><a href="#rate-limits">Rate Limits</a></li>
+<li><a href="#support">Support</a></li>
+</ol>
+<hr />
 <h2 id="requesting-an-api-key">Requesting an API Key</h2>
 <p>To use the match-bot API:</p>
 <ol>
@@ -842,7 +877,7 @@
 Authorization: Bearer YOUR_API_KEY</p>
 <hr />
 <p>Telegram Bot Usage</p>
-<p>Find the bot on Telegram: @matchbot</p>
+<p>Find the bot on Telegram: @matchoutcomebot</p>
 <p>Commands:</p>
 <p>/predict Arsenal vs Manchester United — Predicts the outcome of a specific match.</p>
 <p>/nextmatch — Shows the next scheduled match with prediction.</p>
@@ -856,6 +891,7 @@ Authorization: Bearer YOUR_API_KEY</p>
 <hr />
 <p>POST api/retrain/ (name: retrain_predictions)</p>
 <p>Triggers a model retrain. Admin access only.</p>
+<p>Example</p>
 <p>curl -X POST -H "Authorization: Bearer ADMIN_API_KEY" \
 https://api.match-bot.com/api/retrain/</p>
 <hr />
@@ -927,7 +963,8 @@ Enterprise  Custom  Dedicated support</p>
 <p>Support</p>
 <p>Email: support@pluggedspace.org</p>
 <p>Telegram: @MatchOutcomeBot</p>
-<p>Docs: https://api.match-bot.com/docs</p>
+<p>Docs: https://docs.pluggedspace.org/models/match</p>
+<hr />
 
 
 
