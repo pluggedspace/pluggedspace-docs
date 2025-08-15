@@ -54,7 +54,7 @@ Authorization: Bearer YOUR_API_KEY
 
 ---
 
-Telegram Bot Usage
+##Telegram Bot Usage
 
 Find the bot on Telegram: @matchoutcomebot
 
@@ -70,7 +70,7 @@ Commands:
 
 ---
 
-API Endpoints
+##API Endpoints
 
 GET api/
 
