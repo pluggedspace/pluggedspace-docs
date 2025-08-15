@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-mkdocs" class="md-skip">
+        <a href="#welcome-to-match-bot-documentation" class="md-skip">
           Skip to content
         </a>
       
@@ -715,18 +715,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
+  <a href="#requesting-an-api-key" class="md-nav__link">
     <span class="md-ellipsis">
-      Commands
+      Requesting an API Key
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
+  <a href="#authentication" class="md-nav__link">
     <span class="md-ellipsis">
-      Project layout
+      Authentication
     </span>
   </a>
   
@@ -775,18 +775,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
+  <a href="#requesting-an-api-key" class="md-nav__link">
     <span class="md-ellipsis">
-      Commands
+      Requesting an API Key
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
+  <a href="#authentication" class="md-nav__link">
     <span class="md-ellipsis">
-      Project layout
+      Authentication
     </span>
   </a>
   
@@ -808,21 +808,126 @@
 
 
 
-<h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
+<h1 id="welcome-to-match-bot-documentation">Welcome to match-bot Documentation</h1>
+<p>For full API reference visit <a href="https://docs.pluggedspace.org/models/match">m.pluggedspace.org</a>.</p>
+<hr />
+<h2 id="requesting-an-api-key">Requesting an API Key</h2>
+<p>To use the match-bot API:</p>
+<ol>
+<li><strong>Apply Online</strong></li>
+<li>Visit: <a href="https://match-bot.com/apply">https://match-bot.com/apply</a></li>
+<li>
+<p>Fill out the application form with:</p>
 <ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
+<li>Name / Organization</li>
+<li>Intended usage (project or integration)</li>
+<li>Contact email</li>
 </ul>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre>
+</li>
+<li>
+<p><strong>Email Request</strong></p>
+</li>
+<li>Send to: <strong>access@match-bot.com</strong></li>
+<li>Subject: <code>API Access Request</code></li>
+<li>Body: Include your details and intended usage.</li>
+</ol>
+<p>Once approved, you will receive:
+- <strong>API Key</strong> (unique to your account)
+- <strong>Usage limits</strong>
+- <strong>API documentation link</strong></p>
+<hr />
+<h2 id="authentication">Authentication</h2>
+<p>All API requests must include your API key:</p>
+<p>```http
+Authorization: Bearer YOUR_API_KEY</p>
+<hr />
+<p>Telegram Bot Usage</p>
+<p>Find the bot on Telegram: @matchbot</p>
+<p>Commands:</p>
+<p>/predict Arsenal vs Manchester United — Predicts the outcome of a specific match.</p>
+<p>/nextmatch — Shows the next scheduled match with prediction.</p>
+<p>/help — Lists all available commands.</p>
+<hr />
+<p>API Endpoints</p>
+<p>GET api/</p>
+<p>Returns available endpoints and service info.</p>
+<p>Example</p>
+<p>curl -H "Authorization: Bearer YOUR_API_KEY" https://api.match-bot.com/api/</p>
+<hr />
+<p>POST api/retrain/ (name: retrain_predictions)</p>
+<p>Triggers a model retrain. Admin access only.</p>
+<p>curl -X POST -H "Authorization: Bearer ADMIN_API_KEY" \
+https://api.match-bot.com/api/retrain/</p>
+<hr />
+<p>GET api/dashboard/overview/ (name: dashboard_overview)</p>
+<p>Returns aggregated prediction stats.</p>
+<p>Example Response</p>
+<p>{
+  "total_predictions": 125,
+  "accuracy": 0.82,
+  "average_confidence": 0.74
+}</p>
+<hr />
+<p>GET api/dashboard/confidence/ (name: dashboard_confidence)</p>
+<p>Returns prediction confidence distribution.</p>
+<p>Example Response</p>
+<p>{
+  "high_confidence": 58,
+  "medium_confidence": 47,
+  "low_confidence": 20
+}</p>
+<hr />
+<p>GET api/predictions/latest/ (name: latest_predictions)</p>
+<p>Returns the most recent match predictions.</p>
+<p>Example</p>
+<p>curl -H "Authorization: Bearer YOUR_API_KEY" \
+https://api.match-bot.com/api/predictions/latest/</p>
+<p>Example Response</p>
+<p>[
+  {
+    "match_id": 987,
+    "home_team": "Arsenal",
+    "away_team": "Manchester United",
+    "predicted_outcome": "Home Win",
+    "predicted_goal_diff": 1.4,
+    "confidence": 0.81
+  }
+]</p>
+<hr />
+<p>GET api/dashboard/compare_versions/ (name: compare_versions)</p>
+<p>Compares prediction accuracy between model versions.</p>
+<p>Example Response</p>
+<p>{
+  "version_1": { "accuracy": 0.78 },
+  "version_2": { "accuracy": 0.82 }
+}</p>
+<hr />
+<p>GET dashboard/predictions/</p>
+<p>Returns prediction data for dashboard visualization.</p>
+<p>Example Response</p>
+<p>[
+  {
+    "match": "Liverpool vs Chelsea",
+    "outcome": "Draw",
+    "confidence": 0.66
+  },
+  {
+    "match": "Barcelona vs Real Madrid",
+    "outcome": "Away Win",
+    "confidence": 0.72
+  }
+]</p>
+<hr />
+<p>Rate Limits</p>
+<p>Plan    Requests/day    Notes</p>
+<p>Free    50  Basic access
+Pro 5,000   Higher limits &amp; priority
+Enterprise  Custom  Dedicated support</p>
+<hr />
+<p>Support</p>
+<p>Email: support@pluggedspace.org</p>
+<p>Telegram: @MatchOutcomeBot</p>
+<p>Docs: https://api.match-bot.com/docs</p>
 
 
 
