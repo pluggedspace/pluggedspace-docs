@@ -9,13 +9,13 @@ For full API reference visit [m.pluggedspace.org](https://docs.pluggedspace.org/
 2. [Authentication](#authentication)
 3. [Telegram Bot Usage](#telegram-bot-usage)
 4. [API Endpoints](#api-endpoints)
-   - [GET api/](#get-api)
-   - [POST api/retrain/](#post-apiretrain-name-retrain_predictions)
-   - [GET api/dashboard/overview/](#get-apidashboardoverview-name-dashboard_overview)
-   - [GET api/dashboard/confidence/](#get-apidashboardconfidence-name-dashboard_confidence)
-   - [GET api/predictions/latest/](#get-apipredictionslatest-name-latest_predictions)
-   - [GET api/dashboard/compare_versions/](#get-apidashboardcompare_versions-name-compare_versions)
-   - [GET dashboard/predictions/](#get-dashboardpredictions)
+   - [GET /api/](#get-api)
+   - [POST /api/retrain/](#post-apiretrain)
+   - [GET /api/dashboard/overview/](#get-apidashboardoverview)
+   - [GET /api/dashboard/confidence/](#get-apidashboardconfidence)
+   - [GET /api/predictions/latest/](#get-apipredictionslatest)
+   - [GET /api/dashboard/compare_versions/](#get-apidashboardcompareversions)
+   - [GET /dashboard/predictions/](#get-dashboardpredictions)
 5. [Rate Limits](#rate-limits)
 6. [Support](#support)
 
@@ -26,14 +26,14 @@ For full API reference visit [m.pluggedspace.org](https://docs.pluggedspace.org/
 To use the match-bot API:
 
 1. **Apply Online**
-   - Visit: [https://match-bot.com/apply](https://match-bot.com/apply)
+   - Visit: [https://m.pluggedspace.org/apply](https://m.pluggedspace.org/apply)
    - Fill out the application form with:
      - Name / Organization
      - Intended usage (project or integration)
      - Contact email
 
 2. **Email Request**
-   - Send to: **access@match-bot.com**
+   - Send to: **access@pluggedspace.org**
    - Subject: `API Access Request`
    - Body: Include your details and intended usage.
 
@@ -50,92 +50,83 @@ All API requests must include your API key:
 
 ```http
 Authorization: Bearer YOUR_API_KEY
-
-
----
-
-##Telegram Bot Usage
-
-Find the bot on Telegram: @matchoutcomebot
-
-Commands:
-
-/predict Arsenal vs Manchester United — Predicts the outcome of a specific match.
-
-/nextmatch — Shows the next scheduled match with prediction.
-
-/help — Lists all available commands.
-
-
+```
 
 ---
 
-##API Endpoints
+## Telegram Bot Usage
 
-GET api/
+Find the bot on Telegram: [@matchoutcomebot](https://t.me/matchoutcomebot)
 
+**Commands:**
+- `/predict Arsenal vs Manchester United` — Predicts the outcome of a specific match
+- `/nextmatch` — Shows the next scheduled match with prediction
+- `/help` — Lists all available commands
+
+---
+
+## API Endpoints
+
+### GET /api/
 Returns available endpoints and service info.
 
-Example
-
-curl -H "Authorization: Bearer YOUR_API_KEY" https://api.match-bot.com/api/
-
+**Example:**
+```bash
+curl -H "Authorization: Bearer YOUR_API_KEY" https://api.m.pluggedspace.org/api/
+```
 
 ---
 
-POST api/retrain/ (name: retrain_predictions)
-
+### POST /api/retrain/
 Triggers a model retrain. Admin access only.
 
-Example
-
+**Example:**
+```bash
 curl -X POST -H "Authorization: Bearer ADMIN_API_KEY" \
-https://api.match-bot.com/api/retrain/
-
+https://api.m.pluggedspace.org/api/retrain/
+```
 
 ---
 
-GET api/dashboard/overview/ (name: dashboard_overview)
-
+### GET /api/dashboard/overview/
 Returns aggregated prediction stats.
 
-Example Response
-
+**Example Response:**
+```json
 {
   "total_predictions": 125,
   "accuracy": 0.82,
   "average_confidence": 0.74
 }
-
+```
 
 ---
 
-GET api/dashboard/confidence/ (name: dashboard_confidence)
-
+### GET /api/dashboard/confidence/
 Returns prediction confidence distribution.
 
-Example Response
-
+**Example Response:**
+```json
 {
   "high_confidence": 58,
   "medium_confidence": 47,
   "low_confidence": 20
 }
-
+```
 
 ---
 
-GET api/predictions/latest/ (name: latest_predictions)
-
+### GET /api/predictions/latest/
 Returns the most recent match predictions.
 
-Example
-
+**Example:**
+```bash
 curl -H "Authorization: Bearer YOUR_API_KEY" \
-https://api.match-bot.com/api/predictions/latest/
+https://api.m.pluggedspace.org/api/predictions/latest/
+```
 
-Example Response
-
+**Example Response:**
+```json
 [
   {
     "match_id": 987,
@@ -146,30 +137,28 @@ Example Response
     "confidence": 0.81
   }
 ]
-
+```
 
 ---
 
-GET api/dashboard/compare_versions/ (name: compare_versions)
-
+### GET /api/dashboard/compare_versions/
 Compares prediction accuracy between model versions.
 
-Example Response
-
+**Example Response:**
+```json
 {
   "version_1": { "accuracy": 0.78 },
   "version_2": { "accuracy": 0.82 }
 }
-
+```
 
 ---
 
-GET dashboard/predictions/
-
+### GET /dashboard/predictions/
 Returns prediction data for dashboard visualization.
 
-Example Response
-
+**Example Response:**
+```json
 [
   {
     "match": "Liverpool vs Chelsea",
@@ -182,29 +171,22 @@ Example Response
     "confidence": 0.72
   }
 ]
-
-
----
-
-Rate Limits
-
-Plan	Requests/day	Notes
-
-Free	50	Basic access
-Pro	5,000	Higher limits & priority
-Enterprise	Custom	Dedicated support
-
-
+```
 
 ---
 
-Support
+## Rate Limits
 
-Email: support@pluggedspace.org
-
-Telegram: @MatchOutcomeBot
-
-Docs: https://docs.pluggedspace.org/models/match
-
+| Plan        | Requests/day | Notes                          |
+|-------------|-------------|--------------------------------|
+| Free        | 50          | Basic access                   |
+| Pro         | 5,000       | Higher limits & priority       |
+| Enterprise  | Custom      | Dedicated support              |
 
 ---
+
+## Support
+
+- **Email:** support@pluggedspace.org
+- **Telegram:** [@MatchOutcomeBot](https://t.me/MatchOutcomeBot)
+- **Documentation:** [https://docs.pluggedspace.org/models/match](https://docs.pluggedspace.org/models/match)
