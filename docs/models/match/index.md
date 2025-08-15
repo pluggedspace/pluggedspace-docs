@@ -4,6 +4,23 @@ For full API reference visit [m.pluggedspace.org](https://docs.pluggedspace.org/
 
 ---
 
+## Table of Contents
+1. [Requesting an API Key](#requesting-an-api-key)
+2. [Authentication](#authentication)
+3. [Telegram Bot Usage](#telegram-bot-usage)
+4. [API Endpoints](#api-endpoints)
+   - [GET api/](#get-api)
+   - [POST api/retrain/](#post-apiretrain-name-retrain_predictions)
+   - [GET api/dashboard/overview/](#get-apidashboardoverview-name-dashboard_overview)
+   - [GET api/dashboard/confidence/](#get-apidashboardconfidence-name-dashboard_confidence)
+   - [GET api/predictions/latest/](#get-apipredictionslatest-name-latest_predictions)
+   - [GET api/dashboard/compare_versions/](#get-apidashboardcompare_versions-name-compare_versions)
+   - [GET dashboard/predictions/](#get-dashboardpredictions)
+5. [Rate Limits](#rate-limits)
+6. [Support](#support)
+
+---
+
 ## Requesting an API Key
 
 To use the match-bot API:
@@ -39,7 +56,7 @@ Authorization: Bearer YOUR_API_KEY
 
 Telegram Bot Usage
 
-Find the bot on Telegram: @matchbot
+Find the bot on Telegram: @matchoutcomebot
 
 Commands:
 
@@ -69,6 +86,8 @@ curl -H "Authorization: Bearer YOUR_API_KEY" https://api.match-bot.com/api/
 POST api/retrain/ (name: retrain_predictions)
 
 Triggers a model retrain. Admin access only.
+
+Example
 
 curl -X POST -H "Authorization: Bearer ADMIN_API_KEY" \
 https://api.match-bot.com/api/retrain/
@@ -185,7 +204,7 @@ Email: support@pluggedspace.org
 
 Telegram: @MatchOutcomeBot
 
-Docs: https://api.match-bot.com/docs
+Docs: https://docs.pluggedspace.org/models/match
 
 
-
+---
