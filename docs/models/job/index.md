@@ -189,5 +189,5 @@ Returns prediction data for dashboard visualization.
 ## Support
 
 - **Email:** support@pluggedspace.org
-- **Telegram:** [@MatchOutcomeBot](https://t.me/MatchOutcomeBot)
-- **Documentation:** [https://docs.pluggedspace.org/models/match](https://docs.pluggedspace.org/models/match)
+- **Telegram:** [@jobautobot](https://t.me/jobautobot)
+- **Documentation:** [https://docs.pluggedspace.org/models/job](https://docs.pluggedspace.org/models/job)
