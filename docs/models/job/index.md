@@ -1,193 +1,337 @@
+# Job Autobot Documentation
 
-# Welcome to job-autobot Documentation
-
-For full API reference visit [api.pluggedspace.org/job](https://docs.pluggedspace.org/models/job).
+Job Autobot is an AI-powered job search assistant available on Telegram that helps job seekers find opportunities, build professional CVs, and navigate their career development.
 
 ---
 
 ## Table of Contents
-1. [Requesting an API Key](#requesting-an-api-key)
-2. [Authentication](#authentication)
-3. [Telegram Bot Usage](#telegram-bot-usage)
-4. [API Endpoints](#api-endpoints)
-   - [GET /api/](#get-api)
-   - [POST /api/retrain/](#post-apiretrain)
-   - [GET /api/dashboard/overview/](#get-apidashboardoverview)
-   - [GET /api/dashboard/confidence/](#get-apidashboardconfidence)
-   - [GET /api/predictions/latest/](#get-apipredictionslatest)
-   - [GET /api/dashboard/compare_versions/](#get-apidashboardcompareversions)
-   - [GET /dashboard/predictions/](#get-dashboardpredictions)
-5. [Rate Limits](#rate-limits)
-6. [Support](#support)
+1. [Overview](#overview)
+2. [Getting Started](#getting-started)
+3. [Commands Reference](#commands-reference)
+4. [Features](#features)
+5. [For Developers](#for-developers)
+6. [Pricing & Limits](#pricing--limits)
+7. [Support](#support)
+8. [FAQ](#faq)
 
 ---
 
-## Requesting an API Key
+## Overview
 
-To use the jobautobot API:
+Job Autobot leverages AI to streamline the job search process by providing:
 
-1. **Apply Online**
-   - Visit: [https://api.pluggedspace.org/apply](https://api.pluggedspace.org/apply)
-   - Fill out the application form with:
-     - Name / Organization
-     - Intended usage (project or integration)
-     - Contact email
+- **Smart Job Search**: Find relevant opportunities using natural language queries
+- **CV Building**: Create and optimize professional resumes
+- **Career Guidance**: Get personalized career path recommendations
+- **Application Tools**: Generate cover letters and improve your CV
+- **Job Alerts**: Receive notifications for new matching positions
 
-2. **Email Request**
-   - Send to: **access@pluggedspace.org**
-   - Subject: `API Access Request`
-   - Body: Include your details and intended usage.
-
-Once approved, you will receive:
-- **API Key** (unique to your account)
-- **Usage limits**
-- **API documentation link**
+**Target Audience**: Job seekers at all career levels, from entry-level to experienced professionals.
 
 ---
 
-## Authentication
+## Getting Started
 
-All API requests must include your API key:
+### Accessing Job Autobot
 
-```http
-Authorization: Bearer YOUR_API_KEY
+1. **Open Telegram**
+   - Search for `@jobautobot` or visit: [t.me/jobautobot](https://t.me/jobautobot)
+   
+2. **Start Chatting**
+   - Send `/start` to begin
+   - Use available commands to explore features
+
+3. **Free vs Premium**
+   - Free users get 10 job searches per month
+   - Upgrade to premium for unlimited access and advanced features
+
+---
+
+## Commands Reference
+
+### 🎯 Core Job Search Commands
+
+#### `/findjobs [keywords] [location] [type]`
+Searches for jobs across multiple platforms.
+
+**Parameters:**
+- `keywords` (required): Job title, skills, or company names
+- `location` (optional): City, country, or "remote"
+- `type` (optional): full-time, part-time, contract, internship
+
+**Examples:**
 ```
 
----
+/findjobs python developer
+/findjobs data scientist london
+/findjobs frontend developer remote full-time
+/findjobs marketing manager new york
 
-## Telegram Bot Usage
-
-Find the bot on Telegram: [@jobautobot](https://t.me/jobautobot)
-
-**Commands:**
-- `/findjob Arsenal vs Manchester United` — Predicts the outcome of a specific match
-- `/view_cv` — Shows the next scheduled match with prediction
-- `/help` — Lists all available commands
-
----
-
-## API Endpoints
-
-### GET /api/
-Returns available endpoints and service info.
-
-**Example:**
-```bash
-curl -H "Authorization: Bearer YOUR_API_KEY" https://api.m.pluggedspace.org/api/
 ```
 
----
+#### `/quota`
+Shows your remaining job searches for the current month.
 
-### POST /api/retrain/
-Triggers a model retrain. Admin access only.
+**Free Users:** 10 searches per month
+**Premium Users:** Unlimited searches
 
-**Example:**
-```bash
-curl -X POST -H "Authorization: Bearer ADMIN_API_KEY" \
-https://api.m.pluggedspace.org/api/retrain/
-```
+#### `/history`
+Displays your saved jobs and search history.
 
 ---
 
-### GET /api/dashboard/overview/
-Returns aggregated prediction stats.
+### 📝 CV & Profile Management
 
-**Example Response:**
-```json
-{
-  "total_predictions": 125,
-  "accuracy": 0.82,
-  "average_confidence": 0.74
-}
-```
+#### `/build_cv`
+Starts an interactive CV creation wizard with the following sections:
+- Personal information
+- Work experience (multiple positions)
+- Education history
+- Skills and competencies
+- Projects and portfolio
+- Certifications and awards
+- References
 
----
+The bot guides you through each section step by step.
 
-### GET /api/dashboard/confidence/
-Returns prediction confidence distribution.
+#### `/view_cv`
+Displays your current CV in a formatted, readable layout.
 
-**Example Response:**
-```json
-{
-  "high_confidence": 58,
-  "medium_confidence": 47,
-  "low_confidence": 20
-}
-```
+#### `/cv_review`
+Provides AI-powered analysis of your CV with suggestions for:
+- Formatting improvements
+- Content optimization
+- Keyword enhancement for ATS systems
+- Section organization
 
 ---
 
-### GET /api/predictions/latest/
-Returns the most recent match predictions.
+### 🔔 Job Alerts System
 
-**Example:**
-```bash
-curl -H "Authorization: Bearer YOUR_API_KEY" \
-https://api.m.pluggedspace.org/api/predictions/latest/
-```
+#### `/setalert`
+Creates personalized job alerts based on your criteria:
+- Job titles and keywords
+- Locations (or remote)
+- Salary ranges
+- Experience levels
+- Company types
 
-**Example Response:**
-```json
-[
-  {
-    "match_id": 987,
-    "home_team": "Arsenal",
-    "away_team": "Manchester United",
-    "predicted_outcome": "Home Win",
-    "predicted_goal_diff": 1.4,
-    "confidence": 0.81
-  }
-]
-```
+**Examples of alert criteria:**
+- "Senior software engineer positions in Berlin"
+- "Remote marketing jobs paying $80k+"
+- "Entry-level data analyst roles"
 
----
-
-### GET /api/dashboard/compare_versions/
-Compares prediction accuracy between model versions.
-
-**Example Response:**
-```json
-{
-  "version_1": { "accuracy": 0.78 },
-  "version_2": { "accuracy": 0.82 }
-}
-```
+#### `/myalerts`
+Manages your active job alerts:
+- View all active alerts
+- Edit alert criteria
+- Delete alerts
+- Pause/resume alerts
 
 ---
 
-### GET /dashboard/predictions/
-Returns prediction data for dashboard visualization.
+### 🚀 Career Development
 
-**Example Response:**
-```json
-[
-  {
-    "match": "Liverpool vs Chelsea",
-    "outcome": "Draw",
-    "confidence": 0.66
-  },
-  {
-    "match": "Barcelona vs Real Madrid",
-    "outcome": "Away Win",
-    "confidence": 0.72
-  }
-]
+#### `/careerpath [current_role]`
+Explores career progression options and potential growth paths.
+
+**Examples:**
 ```
+
+/careerpath software developer
+/careerpath marketing coordinator
+/careerpath data analyst
+
+```
+
+**Provides:**
+- Next-level positions
+- Required skills and experience
+- Salary progression data
+- Alternative career paths
+
+#### `/practice`
+Interactive interview preparation with:
+- Common behavioral questions
+- Technical questions by field
+- STAR method guidance
+- Sample answers and feedback
+
+#### `/upskill`
+Generates personalized learning recommendations:
+- Skill gaps analysis
+- Online course suggestions
+- Reading materials
+- Project ideas
+- Certification paths
 
 ---
 
-## Rate Limits
+### ✍️ Application Tools
 
-| Plan        | Requests/day | Notes                          |
-|-------------|-------------|--------------------------------|
-| Free        | 50          | Basic access                   |
-| Pro         | 5,000       | Higher limits & priority       |
-| Enterprise  | Custom      | Dedicated support              |
+#### `/coverletter Job Title | Company`
+Generates tailored cover letters based on:
+- Specific job title and company
+- Your CV information
+- Industry standards and best practices
+- Company research and culture fit
+
+**Format:** `/coverletter [Job Title] | [Company Name]`
+
+**Examples:**
+```
+
+/coverletter Software Engineer | Google
+/coverletter Marketing Manager| Apple
+/coverletter Data Scientist| Remote Company
+
+```
+
+**Features:**
+- Customized to job requirements
+- Highlights relevant experience
+- Professional tone and structure
+- Editable template output
+
+---
+
+### 💎 Premium Features
+
+#### `/subscribe`
+Shows premium plan options and upgrade process.
+
+**Premium Benefits:**
+- Unlimited job searches (vs. 10/month free)
+- Up to 5 active job alerts (vs. 1 free)
+- Advanced CV templates and analytics
+- Priority support
+- Full search results access
+- Enhanced career insights
+
+---
+
+### ℹ️ Help & Information
+
+#### `/start`
+Initializes the bot and displays welcome message with overview.
+
+#### `/help`
+Lists all available commands with brief descriptions.
+
+---
+
+## Features
+
+### Smart Job Search
+- **Natural Language Processing**: Understands complex queries like "senior python jobs in tech startups"
+- **Multi-platform Aggregation**: Searches across major job boards and company career pages
+- **Advanced Filtering**: Location, salary, experience level, company size, and more
+- **Relevance Scoring**: AI-powered matching based on your profile and preferences
+
+### Professional CV Builder
+- **Guided Creation**: Step-by-step process for each CV section
+- **Industry Templates**: Field-specific formats (tech, marketing, healthcare, etc.)
+- **ATS Optimization**: Ensures compatibility with applicant tracking systems
+- **Export Options**: Multiple format support
+
+### Intelligent Matching
+- **Profile-based Recommendations**: Suggests jobs matching your skills and experience
+- **Company Culture Fit**: Considers work environment preferences
+- **Growth Opportunities**: Identifies roles with career advancement potential
+
+### Career Analytics
+- **Search Tracking**: Monitors your job search activity and patterns
+- **Skill Gap Analysis**: Identifies areas for professional development
+- **Market Insights**: Provides industry trends and salary data
+
+---
+
+## For Developers
+
+### Technical Architecture
+While Job Autobot is currently Telegram-only, the system is built on:
+
+- **Natural Language Processing**: For understanding job search queries and CV content
+- **Machine Learning Models**: For job matching and career path recommendations
+- **Data Integration**: Aggregating job listings from multiple sources
+- **User Profiling**: Building comprehensive candidate profiles
+
+### Future API Considerations
+Potential future endpoints may include:
+- Job search integration
+- CV parsing and analysis
+- Career path recommendations
+- Application tracking
+
+### Integration Possibilities
+- Career platforms
+- Educational institutions
+- Recruitment agencies
+- HR systems
+
+---
+
+## Pricing & Limits
+
+### Free Plan
+- ✅ 10 job searches per month
+- ✅ Basic CV building
+- ✅ 1 active job alert
+- ✅ Standard command access
+- ✅ Community support
+
+### Premium Plan ($9.99/month)
+- ✅ Unlimited job searches
+- ✅ Up to 5 active job alerts
+- ✅ Advanced CV templates and analytics
+- ✅ Priority support
+- ✅ Full search results access
+- ✅ Enhanced career insights
+- ✅ Early access to new features
 
 ---
 
 ## Support
 
-- **Email:** support@pluggedspace.org
-- **Telegram:** [@jobautobot](https://t.me/jobautobot)
-- **Documentation:** [https://docs.pluggedspace.org/models/job](https://docs.pluggedspace.org/models/job)
+### Getting Help
+- **In-Bot Support**: Use `/help` for command assistance
+- **Email**: support@pluggedspace.org
+- **Documentation**: [docs.pluggedspace.org/models/jobautobot](https://docs.pluggedspace.org/models/jobautobot)
+- **Website**: [pluggedspace.org/projects/jobautobot](https://pluggedspace.org/projects/jobautobot)
+
+### Common Issues
+- **Search Limits**: Use `/quota` to check remaining searches
+- **CV Building**: Use `/build_cv` for step-by-step guidance
+- **Job Alerts**: Use `/myalerts` to manage notifications
+- **Premium Features**: Use `/subscribe` for upgrade information
+
+---
+
+## FAQ
+
+### 🤔 How accurate are the job matches?
+Job Autobot uses advanced AI algorithms to match your profile with relevant positions, considering skills, experience, preferences, and career goals.
+
+### 💼 Which job boards do you search?
+We aggregate from multiple sources including major job boards, company career pages, and specialized platforms to provide comprehensive results.
+
+### 📄 Can I export my CV?
+Yes, the CV builder allows export in multiple formats suitable for different applications.
+
+### 🔔 How often do job alerts update?
+Alerts check for new positions daily and notify you immediately when matches are found.
+
+### 💰 Is there a free trial for premium?
+All users start with free access. Premium features are available through subscription with clear benefits outlined.
+
+### 🔒 Is my data secure?
+Yes, we take data privacy seriously. Your personal information and CV data are encrypted and stored securely.
+
+### 📱 Is there a mobile app?
+Job Autobot runs entirely within Telegram, which is available on all major mobile platforms.
+
+---
+
+*Last updated: January 2025*  
+*Version: 2.1*  
+*For the latest updates, visit our documentation site.*
