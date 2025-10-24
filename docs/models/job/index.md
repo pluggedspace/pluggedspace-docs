@@ -296,8 +296,8 @@ Potential future endpoints may include:
 ### Getting Help
 - **In-Bot Support**: Use `/help` for command assistance
 - **Email**: support@pluggedspace.org
-- **Documentation**: [docs.pluggedspace.org/models/jobautobot](https://docs.pluggedspace.org/models/jobautobot)
-- **Website**: [pluggedspace.org/projects/jobautobot](https://pluggedspace.org/projects/jobautobot)
+- **Documentation**: [docs.pluggedspace.org/models/job](https://docs.pluggedspace.org/models/job)
+- **Website**: [pluggedspace.org/projects/job](https://pluggedspace.org/projects/job)
 
 ### Common Issues
 - **Search Limits**: Use `/quota` to check remaining searches
