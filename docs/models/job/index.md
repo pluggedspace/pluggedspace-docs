@@ -1,7 +1,7 @@
 
-# Welcome to match-bot Documentation
+# Welcome to job-autobot Documentation
 
-For full API reference visit [m.pluggedspace.org](https://docs.pluggedspace.org/models/match).
+For full API reference visit [api.pluggedspace.org/job](https://docs.pluggedspace.org/models/job).
 
 ---
 
@@ -24,10 +24,10 @@ For full API reference visit [m.pluggedspace.org](https://docs.pluggedspace.org/
 
 ## Requesting an API Key
 
-To use the match-bot API:
+To use the jobautobot API:
 
 1. **Apply Online**
-   - Visit: [https://m.pluggedspace.org/apply](https://m.pluggedspace.org/apply)
+   - Visit: [https://api.pluggedspace.org/apply](https://api.pluggedspace.org/apply)
    - Fill out the application form with:
      - Name / Organization
      - Intended usage (project or integration)
@@ -57,11 +57,11 @@ Authorization: Bearer YOUR_API_KEY
 
 ## Telegram Bot Usage
 
-Find the bot on Telegram: [@matchoutcomebot](https://t.me/matchoutcomebot)
+Find the bot on Telegram: [@jobautobot](https://t.me/jobautobot)
 
 **Commands:**
-- `/predict Arsenal vs Manchester United` — Predicts the outcome of a specific match
-- `/nextmatch` — Shows the next scheduled match with prediction
+- `/findjob Arsenal vs Manchester United` — Predicts the outcome of a specific match
+- `/view_cv` — Shows the next scheduled match with prediction
 - `/help` — Lists all available commands
 
 ---
