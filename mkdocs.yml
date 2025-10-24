@@ -53,3 +53,5 @@ nav:
       - Analytics: data/analytics.md
   - Match Predictor:
       - Overview: models/match/index.md
+  - Job Autobot:
+      - Overview: models/job/index.md
