@@ -38,20 +38,5 @@ extra:
 
 nav:
   - Home: index.md
-  - Monica:
-      - Overview: saas/monica/index.md
-      - API Reference: saas/monica/api.md
-  - DRAC:
-      - Overview: saas/drac/index.md
-      - Usage: saas/drac/usage.md
-  - KYC Engine:
-      - Overview: saas/kyc/index.md
-      - FAQ: saas/kyc/faq.md
-  - Data:
-      - Overview: data/index.md
-      - Lakehouse: data/lakehouse.md
-      - Analytics: data/analytics.md
-  - Match Predictor:
-      - Overview: models/match/index.md
   - Job Autobot:
       - Overview: models/job/index.md
