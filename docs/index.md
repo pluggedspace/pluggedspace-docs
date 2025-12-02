@@ -6,10 +6,9 @@
 
 Pluggedspace powers a suite of intelligent, scalable tools, including:
 
-- **Monica** — AI-powered customer service assistant.
-- **DRAC** — Data resolution and analytics center.
-- **KYC Engine** — Identity verification and compliance tool.
-- **Bundles & APIs** — Unified access, billing, and API management.
+- **Job Autobot** — AI-powered Job search & prep assistant.
+- **Match Bot** — Football Predictor.
+- **Atlas** — Intelligent Business Suite.
 
 Explore how each product works, how to integrate with them, and best practices for deploying them in your organization.
 
@@ -23,10 +22,10 @@ New to Pluggedspace? Start here:
 
 ## 📦 Product Documentation
 
-- [Monica – Customer Service AI](monica/index.md)
-- [DRAC – Dispute & Data Resolution](drac/index.md)
-- [KYC Engine – Compliance Layer](kyc/index.md)
-- [Bundles, Plans & Billing](billing/index.md)
+- [Job AutoBot – Customer Service AI](models/job/index.md)
+- [Match Bot – Dispute & Data Resolution](models/match/index.md)
+- [Atlas – Compliance Layer](data/index.md)
+
 
 ## 📘 Resources
 
