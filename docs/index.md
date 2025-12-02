@@ -1,6 +1,6 @@
 # Welcome to Pluggedspace Documentation
 
-**Pluggedspace** is a unified platform offering smart SaaS tools designed for startups, agencies, and enterprise teams. This documentation provides everything you need to get started with our ecosystem, use our APIs, and integrate our services into your workflows.
+**Pluggedspace** is a unified platform offering smart tools and solutions designed for every one. This documentation provides everything you need to get started with our ecosystem, use our Tools, and integrate our services into your workflows.
 
 ## 🔍 Overview
 
