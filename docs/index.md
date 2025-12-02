@@ -22,9 +22,9 @@ New to Pluggedspace? Start here:
 
 ## 📦 Product Documentation
 
-- [Job AutoBot – Customer Service AI](models/job/index.md)
-- [Match Bot – Dispute & Data Resolution](models/match/index.md)
-- [Atlas – Compliance Layer](data/index.md)
+- [Job AutoBot – Job AI](models/job/index.md)
+- [Match Bot – Match Predictor](models/match/index.md)
+- [Atlas – Intelligence Suite](data/index.md)
 
 
 ## 📘 Resources
