@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /search
+Disallow: /private
+Disallow: /internal
+Disallow: /draft
+Disallow: /_next
+Disallow: /api
+
+Allow: /
+
+Sitemap: https://docs.pluggedspace.org/sitemap.xml
