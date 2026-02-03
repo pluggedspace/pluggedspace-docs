@@ -7,7 +7,6 @@
 Pluggedspace powers a suite of intelligent, scalable tools, including:
 
 - **Job Autobot** — AI-powered Job search & prep assistant.
-- **Match Bot** — Football Predictor.
 - **Atlas** — Intelligent Business Suite.
 
 Explore how each product works, how to integrate with them, and best practices for deploying them in your organization.
@@ -23,7 +22,6 @@ New to Pluggedspace? Start here:
 ## 📦 Product Documentation
 
 - [Job AutoBot – Job AI](models/job/index.md)
-- [Match Bot – Match Predictor](models/match/index.md)
 - [Atlas – Intelligence Suite](data/index.md)
 
 
