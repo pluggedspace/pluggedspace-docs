@@ -38,8 +38,10 @@ extra:
 
 nav:
   - Home: index.md
-  - Atlas:
-      - Overview: data/index.md
   - Job Autobot:
       - Overview: models/job/index.md
+  - Atlas:
+      - Overview: data/index.md
+      - Usage: data/usage.md
+  
   
