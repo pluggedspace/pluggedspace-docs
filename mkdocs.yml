@@ -42,5 +42,4 @@ nav:
       - Overview: data/index.md
   - Job Autobot:
       - Overview: models/job/index.md
-  - Match Predictor:
-      - Overview: models/match/index.md
+  
