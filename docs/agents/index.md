@@ -1,26 +1,26 @@
-PSAgents - Multi-Tenant Agentic OS
+# PSAgents - Multi-Tenant Agentic OS
 
 PSAgents is a Multi-Tenant Agentic Operating System designed to deploy, orchestrate, and govern autonomous AI agents for businesses. It provides a centralized platform where organizations can operate specialized agents across customer service, marketing, finance, compliance, risk management, and industrial operations while maintaining strict tenant isolation and governance controls.
 
-🏗️ High-Level Architecture
+## 🏗️ High-Level Architecture
 
 The platform is built on Django, Django REST Framework, PostgreSQL, and Celery, with a unified orchestration layer and a telemetry-driven memory substrate called BrainBox.
 
-Core Components
+### Core Components
 
-- Agent Orchestration ("core"): Central Intent Manager responsible for agent routing, execution modes, workflow coordination, and audit logging.
-- BrainBox Memory Substrate ("brainbox"): Unified telemetry, memory, knowledge graph, and inference infrastructure.
-- Tenant & Identity Management ("accounts"): Multi-tenant isolation, user management, permissions, API access, and billing controls.
-- Vertical Agents ("agents"): Independent domain-specific agents that can operate autonomously or collaboratively.
-- Infrastructure Layer: Celery workers, Redis queues, PostgreSQL databases, vector search, and external intelligence providers.
+- **Agent Orchestration ("core")**: Central Intent Manager responsible for agent routing, execution modes, workflow coordination, and audit logging.
+- **BrainBox Memory Substrate ("brainbox")**: Unified telemetry, memory, knowledge graph, and inference infrastructure.
+- **Tenant & Identity Management ("accounts")**: Multi-tenant isolation, user management, permissions, API access, and billing controls.
+- **Vertical Agents ("agents")**: Independent domain-specific agents that can operate autonomously or collaboratively.
+- **Infrastructure Layer**: Celery workers, Redis queues, PostgreSQL databases, vector search, and external intelligence providers.
 
-🛠️ Sub-level Functionality
+## 🛠️ Sub-level Functionality
 
-1. Agent Orchestration Engine
+### 1. Agent Orchestration Engine
 
 The Intent Manager serves as the operational core of the platform.
 
-Capabilities
+#### Capabilities
 
 - Intent classification and routing
 - Manual, Hybrid, and Autonomous execution modes
@@ -30,20 +30,21 @@ Capabilities
 - Notification and escalation workflows
 - Complete audit trail generation
 
-Operational Modes
+#### Operational Modes
 
-Mode| Description
-Manual| Human initiates and approves every action
-Hybrid| Agent recommends actions while humans approve critical decisions
-Autonomous| Agent executes approved workflows independently
+| Mode | Description |
+|------|-------------|
+| Manual | Human initiates and approves every action |
+| Hybrid | Agent recommends actions while humans approve critical decisions |
+| Autonomous | Agent executes approved workflows independently |
 
 ---
 
-2. BrainBox Intelligence & Memory Infrastructure
+### 2. BrainBox Intelligence & Memory Infrastructure
 
 BrainBox acts as the cognitive layer powering all agents.
 
-Event Store
+#### Event Store
 
 Captures operational telemetry including:
 
@@ -54,7 +55,7 @@ Captures operational telemetry including:
 - Workflow history
 - User interactions
 
-Semantic Memory
+#### Semantic Memory
 
 Provides retrieval-augmented intelligence through:
 
@@ -64,19 +65,18 @@ Provides retrieval-augmented intelligence through:
 - Long-term memory management
 - Document understanding
 
-Knowledge Graph
+#### Knowledge Graph
 
 Maintains entity relationships across organizational data.
 
 Examples:
-
 - Vendors ↔ Contracts
 - Assets ↔ Maintenance Records
 - Customers ↔ Support Cases
 - Invoices ↔ Payments
 - Risks ↔ Mitigation Plans
 
-Inference Layer
+#### Inference Layer
 
 Stores and serves:
 
@@ -88,11 +88,11 @@ Stores and serves:
 
 ---
 
-3. Customer Service Agent (Monica)
+### 3. Customer Service Agent (Monica)
 
 Monica is a plug-and-play AI customer service platform.
 
-Features
+#### Features
 
 - Website chatbot widget
 - FAQ automation
@@ -103,17 +103,17 @@ Features
 - Conversation memory
 - Escalation to human agents
 
-Integration
+#### Integration
 
 Organizations can deploy Monica with a single JavaScript snippet and connect it to their knowledge base.
 
 ---
 
-4. Marketing Intelligence Agent
+### 4. Marketing Intelligence Agent
 
 The Marketing Agent automates demand generation and market visibility.
 
-Capabilities
+#### Capabilities
 
 - SEO analysis
 - Keyword intelligence
@@ -126,11 +126,11 @@ Capabilities
 
 ---
 
-5. Business Discovery Agent
+### 5. Business Discovery Agent
 
 The Business Finder Agent continuously scans digital channels to identify opportunities.
 
-Features
+#### Features
 
 - Intent discovery
 - Competitor intelligence
@@ -142,11 +142,11 @@ Features
 
 ---
 
-6. Governance & Compliance Agent
+### 6. Governance & Compliance Agent
 
 The Governance Agent automates operational governance and compliance monitoring.
 
-Functions
+#### Functions
 
 - Vendor verification
 - Contract validation
@@ -157,7 +157,7 @@ Functions
 - Policy enforcement
 - Risk reporting
 
-Compliance Use Cases
+#### Compliance Use Cases
 
 - ISO 27001 readiness
 - ISO 9001 readiness
@@ -167,11 +167,11 @@ Compliance Use Cases
 
 ---
 
-7. Finance Intelligence Agent
+### 7. Finance Intelligence Agent
 
 Provides financial visibility and forecasting capabilities.
 
-Features
+#### Features
 
 - Cashflow analysis
 - Runway forecasting
@@ -183,11 +183,11 @@ Features
 
 ---
 
-8. Maintenance & Asset Intelligence Agent
+### 8. Maintenance & Asset Intelligence Agent
 
 Designed for industrial and infrastructure environments.
 
-Capabilities
+#### Capabilities
 
 - Asset monitoring
 - Telemetry ingestion
@@ -199,11 +199,11 @@ Capabilities
 
 ---
 
-9. Risk Detection Agent
+### 9. Risk Detection Agent
 
 Continuously evaluates operational and system risks.
 
-Functions
+#### Functions
 
 - Threat detection
 - Event correlation
@@ -215,11 +215,11 @@ Functions
 
 ---
 
-10. Multi-Tenancy & Governance
+### 10. Multi-Tenancy & Governance
 
 PSAgents is designed for enterprise-grade tenant isolation.
 
-Tenant Controls
+#### Tenant Controls
 
 - Dedicated tenant workspaces
 - Data isolation
@@ -229,7 +229,7 @@ Tenant Controls
 - Subscription management
 - Audit visibility
 
-Governance Features
+#### Governance Features
 
 - Immutable audit logs
 - Workflow traceability
@@ -239,18 +239,18 @@ Governance Features
 
 ---
 
-11. AI & Intelligence Layer
+### 11. AI & Intelligence Layer
 
 The platform integrates multiple intelligence providers.
 
-Supported Services
+#### Supported Services
 
 - Atlas Intelligence Layer
 - Groq (Llama Models)
 - DeepL Translation
 - ElevenLabs Voice AI
 
-AI Functions
+#### AI Functions
 
 - Natural language understanding
 - Agent reasoning
@@ -261,14 +261,13 @@ AI Functions
 
 ---
 
-12. Infrastructure & Scalability
+### 12. Infrastructure & Scalability
 
 Built for production-grade deployments.
 
-Technology Stack
+#### Technology Stack
 
-Backend
-
+**Backend**
 - Django
 - Django REST Framework
 - Celery
@@ -276,20 +275,18 @@ Backend
 - PostgreSQL
 - pgvector
 
-Frontend
-
+**Frontend**
 - Next.js 15
 - Tailwind CSS
 - Zustand
 - Lucide Icons
 
-Infrastructure
-
+**Infrastructure**
 - Docker
 - Docker Compose
 - Caddy Reverse Proxy
 
-Scalability Features
+#### Scalability Features
 
 - Distributed task processing
 - Queue-based execution
@@ -300,39 +297,33 @@ Scalability Features
 
 ---
 
-🚀 Enterprise Use Cases
+## 🚀 Enterprise Use Cases
 
-Customer Operations
-
+### Customer Operations
 Deploy AI-powered customer support and self-service workflows.
 
-Marketing & Sales
-
+### Marketing & Sales
 Automate lead discovery, SEO optimization, and prospect intelligence.
 
-Governance & Compliance
-
+### Governance & Compliance
 Monitor controls, audit vendors, and maintain regulatory readiness.
 
-Financial Operations
-
+### Financial Operations
 Track runway, forecast cashflow, and optimize spending decisions.
 
-Industrial Operations
-
+### Industrial Operations
 Monitor assets and automate predictive maintenance workflows.
 
-Risk Management
-
+### Risk Management
 Detect operational threats and continuously assess business risk.
 
 ---
 
-🔐 Security & Compliance
+## 🔐 Security & Compliance
 
 PSAgents is designed around governance-first principles.
 
-Security Controls
+### Security Controls
 
 - Tenant isolation
 - Role-based access control
@@ -341,7 +332,7 @@ Security Controls
 - Data encryption
 - Event monitoring
 
-Compliance Support
+### Compliance Support
 
 - ISO 27001
 - ISO 9001
@@ -351,6 +342,6 @@ Compliance Support
 
 ---
 
-📈 Vision
+## 📈 Vision
 
 PSAgents serves as the operational intelligence layer for modern organizations, enabling businesses to deploy autonomous agents that can reason, execute, learn, and collaborate while maintaining enterprise-grade governance, security, and compliance standards.
