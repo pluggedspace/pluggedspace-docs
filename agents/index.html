@@ -376,7 +376,317 @@
 
   <h1>Index</h1>
 
-<p>Agentic Operating System</p>
+<p>PSAgents - Multi-Tenant Agentic OS</p>
+<p>PSAgents is a Multi-Tenant Agentic Operating System designed to deploy, orchestrate, and govern autonomous AI agents for businesses. It provides a centralized platform where organizations can operate specialized agents across customer service, marketing, finance, compliance, risk management, and industrial operations while maintaining strict tenant isolation and governance controls.</p>
+<p>🏗️ High-Level Architecture</p>
+<p>The platform is built on Django, Django REST Framework, PostgreSQL, and Celery, with a unified orchestration layer and a telemetry-driven memory substrate called BrainBox.</p>
+<p>Core Components</p>
+<ul>
+<li>Agent Orchestration ("core"): Central Intent Manager responsible for agent routing, execution modes, workflow coordination, and audit logging.</li>
+<li>BrainBox Memory Substrate ("brainbox"): Unified telemetry, memory, knowledge graph, and inference infrastructure.</li>
+<li>Tenant &amp; Identity Management ("accounts"): Multi-tenant isolation, user management, permissions, API access, and billing controls.</li>
+<li>Vertical Agents ("agents"): Independent domain-specific agents that can operate autonomously or collaboratively.</li>
+<li>Infrastructure Layer: Celery workers, Redis queues, PostgreSQL databases, vector search, and external intelligence providers.</li>
+</ul>
+<p>🛠️ Sub-level Functionality</p>
+<ol>
+<li>Agent Orchestration Engine</li>
+</ol>
+<p>The Intent Manager serves as the operational core of the platform.</p>
+<p>Capabilities</p>
+<ul>
+<li>Intent classification and routing</li>
+<li>Manual, Hybrid, and Autonomous execution modes</li>
+<li>Workflow coordination between agents</li>
+<li>Execution monitoring and latency tracking</li>
+<li>Human approval checkpoints</li>
+<li>Notification and escalation workflows</li>
+<li>Complete audit trail generation</li>
+</ul>
+<p>Operational Modes</p>
+<p>Mode| Description
+Manual| Human initiates and approves every action
+Hybrid| Agent recommends actions while humans approve critical decisions
+Autonomous| Agent executes approved workflows independently</p>
+<hr />
+<ol>
+<li>BrainBox Intelligence &amp; Memory Infrastructure</li>
+</ol>
+<p>BrainBox acts as the cognitive layer powering all agents.</p>
+<p>Event Store</p>
+<p>Captures operational telemetry including:</p>
+<ul>
+<li>Execution status</li>
+<li>Task duration</li>
+<li>Agent outcomes</li>
+<li>Audit records</li>
+<li>Workflow history</li>
+<li>User interactions</li>
+</ul>
+<p>Semantic Memory</p>
+<p>Provides retrieval-augmented intelligence through:</p>
+<ul>
+<li>Vector embeddings</li>
+<li>Context retrieval</li>
+<li>Knowledge persistence</li>
+<li>Long-term memory management</li>
+<li>Document understanding</li>
+</ul>
+<p>Knowledge Graph</p>
+<p>Maintains entity relationships across organizational data.</p>
+<p>Examples:</p>
+<ul>
+<li>Vendors ↔ Contracts</li>
+<li>Assets ↔ Maintenance Records</li>
+<li>Customers ↔ Support Cases</li>
+<li>Invoices ↔ Payments</li>
+<li>Risks ↔ Mitigation Plans</li>
+</ul>
+<p>Inference Layer</p>
+<p>Stores and serves:</p>
+<ul>
+<li>Cached reasoning outputs</li>
+<li>Risk scores</li>
+<li>Predictions</li>
+<li>Recommendations</li>
+<li>Agent-generated insights</li>
+</ul>
+<hr />
+<ol>
+<li>Customer Service Agent (Monica)</li>
+</ol>
+<p>Monica is a plug-and-play AI customer service platform.</p>
+<p>Features</p>
+<ul>
+<li>Website chatbot widget</li>
+<li>FAQ automation</li>
+<li>Customer support workflows</li>
+<li>Ticket routing</li>
+<li>Complaint handling</li>
+<li>Dispute management</li>
+<li>Conversation memory</li>
+<li>Escalation to human agents</li>
+</ul>
+<p>Integration</p>
+<p>Organizations can deploy Monica with a single JavaScript snippet and connect it to their knowledge base.</p>
+<hr />
+<ol>
+<li>Marketing Intelligence Agent</li>
+</ol>
+<p>The Marketing Agent automates demand generation and market visibility.</p>
+<p>Capabilities</p>
+<ul>
+<li>SEO analysis</li>
+<li>Keyword intelligence</li>
+<li>Content recommendations</li>
+<li>Lead generation</li>
+<li>CRM synchronization</li>
+<li>Market trend monitoring</li>
+<li>Competitor analysis</li>
+<li>Campaign performance tracking</li>
+</ul>
+<hr />
+<ol>
+<li>Business Discovery Agent</li>
+</ol>
+<p>The Business Finder Agent continuously scans digital channels to identify opportunities.</p>
+<p>Features</p>
+<ul>
+<li>Intent discovery</li>
+<li>Competitor intelligence</li>
+<li>Market research</li>
+<li>Lead enrichment</li>
+<li>Opportunity scoring</li>
+<li>Industry monitoring</li>
+<li>Business profiling</li>
+</ul>
+<hr />
+<ol>
+<li>Governance &amp; Compliance Agent</li>
+</ol>
+<p>The Governance Agent automates operational governance and compliance monitoring.</p>
+<p>Functions</p>
+<ul>
+<li>Vendor verification</li>
+<li>Contract validation</li>
+<li>Regulatory monitoring</li>
+<li>Compliance assessments</li>
+<li>Procurement audits</li>
+<li>Invoice verification</li>
+<li>Policy enforcement</li>
+<li>Risk reporting</li>
+</ul>
+<p>Compliance Use Cases</p>
+<ul>
+<li>ISO 27001 readiness</li>
+<li>ISO 9001 readiness</li>
+<li>Vendor due diligence</li>
+<li>Internal control assessments</li>
+<li>Audit evidence collection</li>
+</ul>
+<hr />
+<ol>
+<li>Finance Intelligence Agent</li>
+</ol>
+<p>Provides financial visibility and forecasting capabilities.</p>
+<p>Features</p>
+<ul>
+<li>Cashflow analysis</li>
+<li>Runway forecasting</li>
+<li>Budget monitoring</li>
+<li>Financial summaries</li>
+<li>Scenario planning</li>
+<li>Revenue trend analysis</li>
+<li>Cost optimization recommendations</li>
+</ul>
+<hr />
+<ol>
+<li>Maintenance &amp; Asset Intelligence Agent</li>
+</ol>
+<p>Designed for industrial and infrastructure environments.</p>
+<p>Capabilities</p>
+<ul>
+<li>Asset monitoring</li>
+<li>Telemetry ingestion</li>
+<li>Predictive maintenance</li>
+<li>Failure prediction</li>
+<li>Work order generation</li>
+<li>Maintenance scheduling</li>
+<li>Equipment performance analysis</li>
+</ul>
+<hr />
+<ol>
+<li>Risk Detection Agent</li>
+</ol>
+<p>Continuously evaluates operational and system risks.</p>
+<p>Functions</p>
+<ul>
+<li>Threat detection</li>
+<li>Event correlation</li>
+<li>Operational risk scoring</li>
+<li>Incident tracking</li>
+<li>Mitigation recommendations</li>
+<li>Dynamic tenant risk profiling</li>
+<li>Security event monitoring</li>
+</ul>
+<hr />
+<ol>
+<li>Multi-Tenancy &amp; Governance</li>
+</ol>
+<p>PSAgents is designed for enterprise-grade tenant isolation.</p>
+<p>Tenant Controls</p>
+<ul>
+<li>Dedicated tenant workspaces</li>
+<li>Data isolation</li>
+<li>Role-based access control (RBAC)</li>
+<li>API key management</li>
+<li>Usage monitoring</li>
+<li>Subscription management</li>
+<li>Audit visibility</li>
+</ul>
+<p>Governance Features</p>
+<ul>
+<li>Immutable audit logs</li>
+<li>Workflow traceability</li>
+<li>Activity monitoring</li>
+<li>Compliance reporting</li>
+<li>Data retention policies</li>
+</ul>
+<hr />
+<ol>
+<li>AI &amp; Intelligence Layer</li>
+</ol>
+<p>The platform integrates multiple intelligence providers.</p>
+<p>Supported Services</p>
+<ul>
+<li>Atlas Intelligence Layer</li>
+<li>Groq (Llama Models)</li>
+<li>DeepL Translation</li>
+<li>ElevenLabs Voice AI</li>
+</ul>
+<p>AI Functions</p>
+<ul>
+<li>Natural language understanding</li>
+<li>Agent reasoning</li>
+<li>Semantic retrieval</li>
+<li>Predictive analysis</li>
+<li>Workflow automation</li>
+<li>Content generation</li>
+</ul>
+<hr />
+<ol>
+<li>Infrastructure &amp; Scalability</li>
+</ol>
+<p>Built for production-grade deployments.</p>
+<p>Technology Stack</p>
+<p>Backend</p>
+<ul>
+<li>Django</li>
+<li>Django REST Framework</li>
+<li>Celery</li>
+<li>Redis</li>
+<li>PostgreSQL</li>
+<li>pgvector</li>
+</ul>
+<p>Frontend</p>
+<ul>
+<li>Next.js 15</li>
+<li>Tailwind CSS</li>
+<li>Zustand</li>
+<li>Lucide Icons</li>
+</ul>
+<p>Infrastructure</p>
+<ul>
+<li>Docker</li>
+<li>Docker Compose</li>
+<li>Caddy Reverse Proxy</li>
+</ul>
+<p>Scalability Features</p>
+<ul>
+<li>Distributed task processing</li>
+<li>Queue-based execution</li>
+<li>Horizontal worker scaling</li>
+<li>Vector search support</li>
+<li>High-volume telemetry storage</li>
+<li>Multi-agent orchestration</li>
+</ul>
+<hr />
+<p>🚀 Enterprise Use Cases</p>
+<p>Customer Operations</p>
+<p>Deploy AI-powered customer support and self-service workflows.</p>
+<p>Marketing &amp; Sales</p>
+<p>Automate lead discovery, SEO optimization, and prospect intelligence.</p>
+<p>Governance &amp; Compliance</p>
+<p>Monitor controls, audit vendors, and maintain regulatory readiness.</p>
+<p>Financial Operations</p>
+<p>Track runway, forecast cashflow, and optimize spending decisions.</p>
+<p>Industrial Operations</p>
+<p>Monitor assets and automate predictive maintenance workflows.</p>
+<p>Risk Management</p>
+<p>Detect operational threats and continuously assess business risk.</p>
+<hr />
+<p>🔐 Security &amp; Compliance</p>
+<p>PSAgents is designed around governance-first principles.</p>
+<p>Security Controls</p>
+<ul>
+<li>Tenant isolation</li>
+<li>Role-based access control</li>
+<li>API authentication</li>
+<li>Audit logging</li>
+<li>Data encryption</li>
+<li>Event monitoring</li>
+</ul>
+<p>Compliance Support</p>
+<ul>
+<li>ISO 27001</li>
+<li>ISO 9001</li>
+<li>Vendor Governance</li>
+<li>Internal Audit Programs</li>
+<li>Risk Management Frameworks</li>
+</ul>
+<hr />
+<p>📈 Vision</p>
+<p>PSAgents serves as the operational intelligence layer for modern organizations, enabling businesses to deploy autonomous agents that can reason, execute, learn, and collaborate while maintaining enterprise-grade governance, security, and compliance standards.</p>
 
 
 
