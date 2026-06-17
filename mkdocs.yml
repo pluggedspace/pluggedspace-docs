@@ -45,3 +45,5 @@ nav:
   - Agents:
       - Overview: agents/index.md
       - Usage: agents/usage.md
+
+  - Faq: faq.md
