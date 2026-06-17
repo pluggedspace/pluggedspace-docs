@@ -13,6 +13,10 @@
         <link rel="canonical" href="https://docs.pluggedspace.org/agents/">
       
       
+        <link rel="prev" href="../data/usage/">
+      
+      
+        <link rel="next" href="usage/">
       
       
         
@@ -23,7 +27,7 @@
     
     
       
-        <title>PSAgents - Multi-Tenant Agentic OS - Pluggedspace Docs</title>
+        <title>Overview - Pluggedspace Docs</title>
       
     
     
@@ -109,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              PSAgents - Multi-Tenant Agentic OS
+              Overview
             
           </span>
         </div>
@@ -319,6 +323,778 @@
   
     <li class="md-nav__item">
       <a href="../data/usage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Usage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agents
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Agents
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#high-level-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏗️ High-Level Architecture
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🏗️ High-Level Architecture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#core-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core Components
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sub-level-functionality" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🛠️ Sub-level Functionality
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🛠️ Sub-level Functionality">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-agent-orchestration-engine" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Agent Orchestration Engine
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Agent Orchestration Engine">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#capabilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Capabilities
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operational-modes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operational Modes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-brainbox-intelligence-memory-infrastructure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. BrainBox Intelligence &amp; Memory Infrastructure
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. BrainBox Intelligence &amp; Memory Infrastructure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#event-store" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Event Store
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#semantic-memory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Semantic Memory
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#knowledge-graph" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Knowledge Graph
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inference-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inference Layer
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-customer-service-agent-monica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Customer Service Agent (Monica)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Customer Service Agent (Monica)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Integration
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-marketing-intelligence-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Marketing Intelligence Agent
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Marketing Intelligence Agent">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#capabilities_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Capabilities
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-business-discovery-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Business Discovery Agent
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Business Discovery Agent">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-governance-compliance-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Governance &amp; Compliance Agent
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Governance &amp; Compliance Agent">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Functions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compliance-use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Compliance Use Cases
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-finance-intelligence-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Finance Intelligence Agent
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Finance Intelligence Agent">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-maintenance-asset-intelligence-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Maintenance &amp; Asset Intelligence Agent
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Maintenance &amp; Asset Intelligence Agent">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#capabilities_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Capabilities
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-risk-detection-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Risk Detection Agent
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Risk Detection Agent">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#functions_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Functions
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-multi-tenancy-governance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Multi-Tenancy &amp; Governance
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. Multi-Tenancy &amp; Governance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tenant-controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tenant Controls
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#governance-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Governance Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11-ai-intelligence-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. AI &amp; Intelligence Layer
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11. AI &amp; Intelligence Layer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#supported-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Supported Services
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AI Functions
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-infrastructure-scalability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Infrastructure &amp; Scalability
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="12. Infrastructure &amp; Scalability">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#technology-stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Technology Stack
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scalability-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scalability Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enterprise-use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🚀 Enterprise Use Cases
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚀 Enterprise Use Cases">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#customer-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Customer Operations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#marketing-sales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Marketing &amp; Sales
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#governance-compliance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Governance &amp; Compliance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#financial-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Financial Operations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#industrial-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Industrial Operations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#risk-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Risk Management
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#security-compliance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔐 Security &amp; Compliance
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔐 Security &amp; Compliance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#security-controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Security Controls
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compliance-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Compliance Support
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vision" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📈 Vision
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="usage/" class="md-nav__link">
         
   
   
@@ -1403,7 +2179,7 @@
       
       
     
-    <a href="https://blog.pluggedspace.org" target="_blank" rel="noopener" title="blog.pluggedspace.org" class="md-social__link">
+    <a href="https://pluggedspace.org/blog" target="_blank" rel="noopener" title="pluggedspace.org" class="md-social__link">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M384 512H96c-53 0-96-43-96-96V96C0 43 43 0 96 0h304c26.5 0 48 21.5 48 48v288c0 20.9-13.4 38.7-32 45.3V448c17.7 0 32 14.3 32 32s-14.3 32-32 32zM96 384c-17.7 0-32 14.3-32 32s14.3 32 32 32h256v-64zm32-232c0 13.3 10.7 24 24 24h176c13.3 0 24-10.7 24-24s-10.7-24-24-24H152c-13.3 0-24 10.7-24 24m24 72c-13.3 0-24 10.7-24 24s10.7 24 24 24h176c13.3 0 24-10.7 24-24s-10.7-24-24-24z"/></svg>
     </a>
   
