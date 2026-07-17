@@ -1,6 +1,6 @@
-# PSAgents - Multi-Tenant Agentic OS
+# Weave - Multi-Tenant Agentic OS
 
-PSAgents is a Multi-Tenant Agentic Operating System designed to deploy, orchestrate, and govern autonomous AI agents for businesses. It provides a centralized platform where organizations can operate specialized agents across customer service, marketing, finance, compliance, risk management, and industrial operations while maintaining strict tenant isolation and governance controls.
+Weave is a Multi-Tenant Agentic Operating System designed to deploy, orchestrate, and govern autonomous AI agents for businesses. It provides a centralized platform where organizations can operate specialized agents across customer service, marketing, finance, compliance, risk management, and industrial operations while maintaining strict tenant isolation and governance controls.
 
 ## 🏗️ High-Level Architecture
 
@@ -217,7 +217,7 @@ Continuously evaluates operational and system risks.
 
 ### 10. Multi-Tenancy & Governance
 
-PSAgents is designed for enterprise-grade tenant isolation.
+Weave is designed for enterprise-grade tenant isolation.
 
 #### Tenant Controls
 
@@ -321,7 +321,7 @@ Detect operational threats and continuously assess business risk.
 
 ## 🔐 Security & Compliance
 
-PSAgents is designed around governance-first principles.
+Weave is designed around governance-first principles.
 
 ### Security Controls
 
@@ -344,4 +344,4 @@ PSAgents is designed around governance-first principles.
 
 ## 📈 Vision
 
-PSAgents serves as the operational intelligence layer for modern organizations, enabling businesses to deploy autonomous agents that can reason, execute, learn, and collaborate while maintaining enterprise-grade governance, security, and compliance standards.
+Weave serves as the operational intelligence layer for modern organizations, enabling businesses to deploy autonomous agents that can reason, execute, learn, and collaborate while maintaining enterprise-grade governance, security, and compliance standards.

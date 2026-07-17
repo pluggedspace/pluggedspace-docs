@@ -1,6 +1,6 @@
-# PSAgents - End-User System Usage Documentation
+# Weave - End-User System Usage Documentation
 
-Welcome to PSAgents, the central multi-tenant **Agentic OS** designed to configure, monitor, and scale your autonomous AI agent fleet. This guide details the step-by-step workflow for business users to operate the dashboard.
+Welcome to Weave, the central multi-tenant **Agentic OS** designed to configure, monitor, and scale your autonomous AI agent fleet. This guide details the step-by-step workflow for business users to operate the dashboard.
 
 ---
 
