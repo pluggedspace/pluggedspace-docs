@@ -377,5 +377,6 @@ Tools are automatically available to agents based on:
 
 - **Documentation**: Refer to `COMPREHENSIVE_SYSTEM_ARCHITECTURE.md` for detailed technical documentation
 - **API Reference**: Check `api_endpoints.md` for complete API documentation
+- **Reproducibility**: Refer to `reproducibility.md` for detailed reproducibility information
 - **Status**: Review `WHATSUP.md` for known issues and system status
 - **Support**: Contact support through the **Settings** panel or email support@pluggedspace.org
