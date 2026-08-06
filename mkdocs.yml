@@ -21,6 +21,8 @@ theme:
 
 plugins:
   - search
+  - sitemap
+
 
 extra:
   social:
