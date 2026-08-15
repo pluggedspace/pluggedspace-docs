@@ -1,42 +1,45 @@
-# Akili’s Weave (Space): Enterprise Intelligence Platform
+# Pluggedspace Atlas — Intelligent Business & Data Suite
 
-Akili’s Weave is an **Enterprise Intelligence Platform** engineered to transform raw data into production-ready insights. It serves as a centralized hub for high-quality data assets and pre-trained AI models, optimized for African data contexts.
+**Pluggedspace Atlas** is an enterprise data intelligence and analytics platform designed to turn raw business data into actionable insights and predictive intelligence. Atlas brings together automated data ingestion, fast natural language querying, interactive SQL analytics, and pre-trained AI intelligence models into a unified workspace.
 
-## 🏗️ High-Level Architecture
-The system is built on **Django** for management and **DuckDB** for high-performance analytical queries. It supports multi-provider cloud storage and features a robust multi-tenancy model.
+---
 
-### Core Components
-- **Dataset Management (`core`)**: Handles dataset metadata, versioning, and lifecycle.
-- **SQL Engine (`duck`)**: Integrates DuckDB for fast, local-first SQL execution.
-- **Ingestion Engine (`ingestion`)**: Automates schema inference and data loading.
-- **Intelligence Infrastructure (`predictor`)**: Manages centrally provisioned models, performance logging, and inference.
-- **Tenancy & Billing (`passapp`)**: Manages tenants, roles, and usage quotas.
-- **Compliance (`drac`)**: Automated data quality and compliance checks.
-- **Distributed Tasks**: Powered by **Celery** and **Redis** for asynchronous processing.
+## 🌟 Key Capabilities
 
-## 🛠️ Sub-level Functionality
+```
+┌────────────────────────────────────────────────────────────────────────┐
+│                        PLUGGEDSPACE ATLAS                              │
+├───────────────────┬────────────────────┬───────────────────────────────┤
+│  📥 Data Ingestion│  ⚡ Fast Analytics  │  🤖 Predictive Intelligence   │
+│  CSV, Excel,      │  NLP English search│  Pre-trained business models, │
+│  Parquet & Cloud  │  & SQL queries     │  automated pipelines & trends │
+├───────────────────┴────────────────────┴───────────────────────────────┤
+│  🛡️ Enterprise Governance: Quality Checks, Lineage, Role-Based Access   │
+└────────────────────────────────────────────────────────────────────────┘
+```
 
-### 1. Dataset Lifecycle
-- **Ingestion**: Supports CSV, Parquet, and Excel. Automatically infers schema.
-- **Layering**: Datasets move through `raw`, `processed`, `refined`, `feature_store`, and `trained` layers.
-- **Versioning**: Every update creates a new version with an audit trail of changes.
-- **Lineage**: Tracks dependencies between datasets and transformations.
+### 1. 📥 Unified Data Ingestion
+- **Universal File Support**: Upload spreadsheets and data files (`.csv`, `.xlsx`, `.parquet`) or connect cloud data sources.
+- **Smart Schema Detection**: Automatically infers column types, headers, and structure upon upload.
+- **Automated Lineage & Versioning**: Every update creates an auditable version snapshot, preserving complete data history.
 
-### 2. Intelligent Querying
-- **DuckDB Integration**: Allows running complex SQL on files without loading them into a traditional database.
-- **NLP Interface**: Translates Natural Language queries into SQL or performs semantic searches across datasets.
-- **Export**: Data can be exported as CSV or JSON via API.
+### 2. ⚡ Intelligent Search & Analytics
+- **Natural Language Querying (NLP)**: Ask business questions in plain English (e.g., *"Show monthly churn rate by subscription tier"*) without writing complex queries.
+- **In-Memory SQL Studio**: Run high-performance SQL queries directly against your datasets with instant results.
+- **One-Click Exports**: Export filtered views, reports, and custom query results to CSV or JSON.
 
-### 3. Intelligence & Model Delivery
-- **Curated Model Registry**: Provides access to high-performance, centrally managed AI models.
-- **Intelligence Pipelines**: Automated workflows that transform refined data into actionable predictions.
-- **Edge Inference**: Optimized endpoints for low-latency intelligence consumption by tenants.
+### 3. 🤖 Curated Intelligence & Predictive Models
+- **Pre-Trained AI Models**: Access purpose-built models for forecasting, trend detection, customer scoring, and anomaly detection.
+- **Automated Intelligence Pipelines**: Create scheduled workflows that continuously clean, transform, and enrich your datasets.
 
-### 4. Tenancy & Resource Management
-- **Multi-tenancy**: Isolated data and resources per tenant.
-- **Usage Quotas**: Tracks compute minutes, tokens, and storage bytes.
-- **Billing**: Generates records based on usage logs and subscription plans.
+### 4. 🛡️ Data Quality & Security
+- **Automated Data Validation**: Scans datasets for missing values, formatting discrepancies, and anomalies prior to processing.
+- **Workspace Isolation**: Enterprise-grade tenant isolation ensures your organization's data remains private and secure.
 
-### 5. Data Compliance (DRAC)
-- **Pre-ingestion Checks**: Files are scanned for compliance before ingestion.
-- **Audit Logging**: Every action is recorded for security and compliance monitoring.
+---
+
+## 🚀 Next Steps
+
+- [Atlas User & Workflow Guide](usage.md) — Step-by-step instructions for importing data, querying, and running pipelines.
+- [Pluggedspace Agents](../agents/index.md) — Explore the autonomous Agentic OS that connects with Atlas.
+- [Support & Contact](../support.md) — Get help from the Pluggedspace team.
