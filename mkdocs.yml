@@ -47,9 +47,9 @@ nav:
   - Atlas:
       - Overview: data/index.md
       - Usage: data/usage.md
-  - Agents:
-      - Overview: agents/index.md
-      - Usage: agents/usage.md
+  - Console:
+      - Overview: console/index.md
+      - Usage: console/usage.md
 
   - Faq: faq.md
   - Support: support.md

@@ -22,7 +22,7 @@ New to Pluggedspace? Start here:
 ## 📦 Product Documentation
 
 - [Atlas – Intelligence Suite](data/index.md)
-- [Agents – Agentic Operating System](agents/index.md)
+- [Console – Agentic Operating System](console/index.md)
 
 ## 📘 Resources
 

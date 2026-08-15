@@ -41,5 +41,5 @@
 ## 🚀 Next Steps
 
 - [Atlas User & Workflow Guide](usage.md) — Step-by-step instructions for importing data, querying, and running pipelines.
-- [Pluggedspace Agents](../agents/index.md) — Explore the autonomous Agentic OS that connects with Atlas.
+- [Pluggedspace Console](../console/index.md) — Explore the autonomous Agentic OS that connects with Atlas.
 - [Support & Contact](../support.md) — Get help from the Pluggedspace team.
