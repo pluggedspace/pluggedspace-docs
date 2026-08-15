@@ -8,7 +8,7 @@
 
 ```
 ┌────────────────────────────────────────────────────────────────────────┐
-│                      PLUGGEDSPACE CONSOLE (OS)                         │
+│                      PLUGGEDSPACE CONSOLE                              │
 ├───────────────────┬────────────────────┬───────────────────────────────┤
 │  🤖 Agent Fleet   │  🧰 Tools & Skills │  🧠 Memory Bank (RAG)         │
 │  Pre-built &      │  28+ Integrations  │  Company knowledge, docs,     │
