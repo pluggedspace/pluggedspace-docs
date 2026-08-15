@@ -1,4 +1,4 @@
-# Weave — Comprehensive System Architecture
+# Pluggedspace Console — Comprehensive System Architecture
 
 > **Version:** 4.0 (Unified Documentation)  
 > **Date:** July 28, 2026  
@@ -41,7 +41,7 @@
 
 ## 1. System Overview
 
-Weave is a **Multi-Tenant Agentic Operating System** designed to host and orchestrate a fleet of autonomous AI agents across diverse business domains. It implements a **Kernel-Agent-Memory** architecture pattern where:
+Pluggedspace Console is a **Multi-Tenant Agentic Operating System** designed to host and orchestrate a fleet of autonomous AI agents across diverse business domains. It implements a **Kernel-Agent-Memory** architecture pattern where:
 
 - The **Kernel** provides shared infrastructure (routing, authentication, billing, backup, runtime engine).
 - **Agent Verticals** are isolated, domain-specific Django applications.
@@ -244,7 +244,7 @@ Weave is a **Multi-Tenant Agentic Operating System** designed to host and orches
 ## 5. Project Structure
 
 ```
-Weave/
+Pluggedspace Console/
 ├── agentictools/                    # Django project root (Kernel)
 │   ├── runtime/                     # V2 + V3 + V4 Runtime Engine (18 modules)
 │   │   ├── runtime.py               # AgentRuntime orchestrator
@@ -1360,7 +1360,7 @@ The shared intelligence layer. Decoupled from agent logic to enable cross-agent 
 
 ### 23.5 billing (Monetization)
 
-Proxies the **Pluggedspace Payments Platform** (`https://auth.pluggedspace.org/api/v1/billing`). Weave no longer stores local billing models; instead it delegates all billing operations to the centralized billing service.
+Proxies the **Pluggedspace Payments Platform** (`https://auth.pluggedspace.org/api/v1/billing`). Pluggedspace Console no longer stores local billing models; instead it delegates all billing operations to the centralized billing service.
 
 **Files:**
 - `client.py`: `BillingClient` wrapper covering usage metering, entitlements, wallet/balance/ledger, pricing, subscriptions, invoices, credit reservations, tax, checkout, and health checks.

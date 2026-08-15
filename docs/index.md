@@ -7,7 +7,7 @@
 Pluggedspace powers a suite of intelligent, scalable tools, including:
 
 - **Atlas** — Intelligent Business Suite.
-- **Agents(Weave)** – Agentic Operating System
+- **Agents(Pluggedspace Console)** – Agentic Operating System
 
 Explore how each product works, how to integrate with them, and best practices for deploying them in your organization.
 

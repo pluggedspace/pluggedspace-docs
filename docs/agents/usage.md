@@ -1,6 +1,6 @@
-# Weave - End-User System Usage Documentation
+# Pluggedspace Console - End-User System Usage Documentation
 
-Welcome to Weave, the central multi-tenant **Agentic OS** designed to configure, monitor, and scale your autonomous AI agent fleet. This guide details the step-by-step workflow for business users to operate the dashboard.
+Welcome to Pluggedspace Console, the central multi-tenant **Agentic OS** designed to configure, monitor, and scale your autonomous AI agent fleet. This guide details the step-by-step workflow for business users to operate the dashboard.
 
 > **System Version:** V4 (Enhanced Ecosystem)  
 > **Last Updated:** July 28, 2026
@@ -208,7 +208,7 @@ Access and manage persistent file artifacts created by agents.
 
 ## 4. V4 Enhanced Tool Ecosystem
 
-Weave V4 includes **28 comprehensive tools** across multiple domains, expanding from the original 14 tools. These tools are available to agents based on their configured tool scope.
+Pluggedspace Console V4 includes **28 comprehensive tools** across multiple domains, expanding from the original 14 tools. These tools are available to agents based on their configured tool scope.
 
 ### Tool Categories
 
@@ -378,5 +378,4 @@ Tools are automatically available to agents based on:
 - **Documentation**: Refer to `COMPREHENSIVE_SYSTEM_ARCHITECTURE.md` for detailed technical documentation
 - **API Reference**: Check `api_endpoints.md` for complete API documentation
 - **Reproducibility**: Refer to `reproducibility.md` for detailed reproducibility information
-- **Status**: Review `WHATSUP.md` for known issues and system status
 - **Support**: Contact support through the **Settings** panel or email support@pluggedspace.org
