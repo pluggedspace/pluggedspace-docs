@@ -4,7 +4,7 @@ This guide provides step-by-step instructions on how to use **Pluggedspace Atlas
 
 ---
 
-## 👥 Team Roles & Permissions
+## Team Roles & Permissions
 
 Atlas uses role-based access control to ensure team members have the appropriate permissions:
 
@@ -17,7 +17,7 @@ Atlas uses role-based access control to ensure team members have the appropriate
 
 ---
 
-## 🛠️ Core User Workflows
+## Core User Workflows
 
 ### Workflow 1: Importing and Managing Datasets
 
@@ -85,7 +85,7 @@ Automate recurring data transformations so your reports are always up to date.
 
 ---
 
-## 💡 Best Practices
+## Best Practices
 
 - **Keep Data Clean**: Use standard header names in CSV/Excel files to optimize automatic schema detection.
 - **Tag Datasets Thoroughly**: Adding relevant domains and tags makes it easy for your whole team to find assets.

@@ -1,17 +1,17 @@
 # Welcome to Pluggedspace Documentation
 
-**Pluggedspace** is a unified platform offering smart tools and solutions designed for every one. This documentation provides everything you need to get started with our ecosystem, use our Tools, and integrate our services into your workflows.
+**Pluggedspace** is a unified platform offering smart tools and solutions designed for everyone. This documentation provides everything you need to get started with our ecosystem, use our Tools, and integrate our services into your workflows.
 
-## 🔍 Overview
+## Overview
 
 Pluggedspace powers a suite of intelligent, scalable tools, including:
 
 - **Atlas** — Intelligent Business Suite.
-- **Agents(Pluggedspace Console)** – Agentic Operating System
+- **Console** – Agentic Operating System
 
 Explore how each product works, how to integrate with them, and best practices for deploying them in your organization.
 
-## 🚀 Getting Started
+## Getting Started
 
 New to Pluggedspace? Start here:
 
@@ -19,12 +19,12 @@ New to Pluggedspace? Start here:
 - [Authentication & API Keys](auth.md)
 - [Using the Portal](portal-guide.md)
 
-## 📦 Product Documentation
+## Product Documentation
 
 - [Atlas – Intelligence Suite](data/index.md)
 - [Console – Agentic Operating System](console/index.md)
 
-## 📘 Resources
+## Resources
 
 - [FAQs](faq.md)
 - [Glossary](glossary.md)

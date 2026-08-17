@@ -4,7 +4,7 @@ Welcome to **Pluggedspace Console**, the central platform to configure, supervis
 
 ---
 
-## 🚀 Quick Start: Workspace Setup
+## Quick Start: Workspace Setup
 
 1. **Access the Portal**: Navigate to `https://agents.pluggedspace.org/login`.
 2. **Account Registration**: 
@@ -14,7 +14,7 @@ Welcome to **Pluggedspace Console**, the central platform to configure, supervis
 
 ---
 
-## 🧭 Dashboard Navigation Overview
+## Dashboard Navigation Overview
 
 | Section | Description |
 | :--- | :--- |
@@ -33,7 +33,7 @@ Welcome to **Pluggedspace Console**, the central platform to configure, supervis
 
 ---
 
-## 🛠️ Step-by-Step User Workflows
+## Step-by-Step User Workflows
 
 ### Workflow 1: Ingesting Knowledge into the Memory Bank
 
@@ -130,7 +130,7 @@ Enforce organizational safety rules to prevent unauthorized or unintended action
 
 ---
 
-## 🛡️ Best Practices & Safety Tips
+## Best Practices & Safety Tips
 
 - **Start in Hybrid Mode**: When launching new agents or integrations, use Hybrid mode to verify accuracy before enabling full autonomy.
 - **Whitelist Domains**: Always lock your customer-facing chat widgets to your verified website domains.
@@ -139,7 +139,7 @@ Enforce organizational safety rules to prevent unauthorized or unintended action
 
 ---
 
-## ❓ Troubleshooting & Support
+## Troubleshooting & Support
 
 - **Agent not triggering an action?** Check **Policy & Guardrails** to see if a restriction rule or missing integration is blocking execution.
 - **Pending approvals accumulating?** Adjust your policy sensitivity or delegate approval roles to additional team members.

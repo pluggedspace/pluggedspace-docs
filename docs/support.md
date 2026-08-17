@@ -1,10 +1,10 @@
-# 🛠️ Support & Contact
+# Support & Contact
 
 Need help with Pluggedspace products or integrations? We’re here for you. Whether you're an end user, a developer, or an agency partner, this page will guide you to the right support channels.
 
 ---
 
-## 📬 Contact Us
+## Contact Us
 
 You can reach out to our support team through the following channels:
 
@@ -15,7 +15,7 @@ You can reach out to our support team through the following channels:
 
 ---
 
-## 🔧 Troubleshooting Guide
+## Troubleshooting Guide
 
 Before contacting support, you might want to:
 
@@ -25,7 +25,7 @@ Before contacting support, you might want to:
 
 ---
 
-## 🧠 Community & Feedback
+## Community & Feedback
 
 We're constantly improving. Help us by sharing your experience:
 
@@ -35,7 +35,7 @@ We're constantly improving. Help us by sharing your experience:
 
 ---
 
-## 📄 Service-Level Commitments
+## Service-Level Commitments
 
 We aim to respond to all inquiries within:
 

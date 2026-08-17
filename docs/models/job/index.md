@@ -86,7 +86,7 @@ Connect your web, Telegram, and WhatsApp accounts to sync your data:
 
 ## Commands Reference
 
-### 🎯 Core Job Search Commands
+### Core Job Search Commands
 
 #### `/findjobs [keywords] [location] [type]`
 Searches for jobs across multiple platforms.
@@ -121,7 +121,7 @@ Displays your saved jobs and search history.
 
 ---
 
-### 📝 CV & Profile Management
+### CV & Profile Management
 
 #### `/build_cv`
 Starts an interactive CV creation wizard with the following sections:
@@ -153,7 +153,7 @@ Provides AI-powered analysis of your CV with suggestions for:
 
 ---
 
-### 🔔 Job Alerts System
+### Job Alerts System
 
 #### `/setalert`
 Creates personalized job alerts based on your criteria:
@@ -181,7 +181,7 @@ Manages your active job alerts:
 
 ---
 
-### 🚀 Career Development
+### Career Development
 
 #### `/careerpath [current_role]`
 Explores career progression options and potential growth paths.
@@ -222,7 +222,7 @@ Generates personalized learning recommendations:
 
 ---
 
-### ✍️ Application Tools
+### Application Tools
 
 #### `/coverletter Job Title | Company`
 Generates tailored cover letters based on:
@@ -250,7 +250,7 @@ Generates tailored cover letters based on:
 
 ---
 
-### 💎 Premium Features
+### Premium Features
 
 #### `/subscribe`
 Shows premium plan options and upgrade process.
@@ -269,7 +269,7 @@ Shows premium plan options and upgrade process.
 
 ---
 
-### ℹ️ Help & Information
+### Help & Information
 
 #### `/start`
 Initializes the bot and displays welcome message with overview.
@@ -368,8 +368,8 @@ Same as Telegram - just type the command (e.g., `/findjobs python developer`)
 ### Bot Best Practices
 
 1. **Be Specific**: Use detailed search queries for better results
-   - ❌ `/findjobs developer`
-   - ✅ `/findjobs senior python developer remote`
+   - Avoid: `/findjobs developer`
+   - Recommended: `/findjobs senior python developer remote`
 
 2. **Use Alerts**: Set up alerts for ongoing job searches
    - Save time by getting notified automatically
@@ -386,35 +386,35 @@ Same as Telegram - just type the command (e.g., `/findjobs python developer`)
 ### Free Plan
 
 **Included**:
-- ✅ 10 job searches per month
-- ✅ 1 job alert
-- ✅ Save unlimited jobs
-- ✅ Basic CV building
-- ✅ Career path explorer
-- ✅ Upskill learning plans
-- ✅ Access via web, Telegram, and WhatsApp
+- 10 job searches per month
+- 1 job alert
+- Save unlimited jobs
+- Basic CV building
+- Career path explorer
+- Upskill learning plans
+- Access via web, Telegram, and WhatsApp
 
 **Limitations**:
-- ❌ Limited searches (10/month)
-- ❌ Only 1 alert
-- ❌ No CV review
-- ❌ No cover letter generator
-- ❌ No mock interviews
+- Limited searches (10/month)
+- Maximum 1 alert
+- No CV review
+- No cover letter generator
+- No mock interviews
 
 ### Premium Plan
 
 **Price**: NGN 4,500/month (approximately $9.99 USD)
 
 **Everything in Free, Plus**:
-- ✅ **Unlimited job searches**
-- ✅ **Up to 5 job alerts**
-- ✅ **AI CV review**
-- ✅ **Cover letter generator**
-- ✅ **Mock interview practice**
-- ✅ **Priority support**
-- ✅ **Full search results access**
-- ✅ **Enhanced career insights**
-- ✅ **Early access to new features**
+- **Unlimited job searches**
+- **Up to 5 job alerts**
+- **AI CV review**
+- **Cover letter generator**
+- **Mock interview practice**
+- **Priority support**
+- **Full search results access**
+- **Enhanced career insights**
+- **Early access to new features**
 
 ### How to Subscribe
 
@@ -587,7 +587,7 @@ A: Job Bot runs entirely within Telegram and WhatsApp, which are available on al
 
 ---
 
-**Happy Job Hunting! 🎉**
+**Happy Job Hunting!**
 
 We're here to help you find your dream job. Good luck!
 
